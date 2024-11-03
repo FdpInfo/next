@@ -1,5 +1,73 @@
-~ B9 (Working...)
-
+~ B9 (5635c78)
++ Added ClickGUI style FDP
++ Added ClickGUI style YZY
++ Config GUI MENU
++ Added update client in main menu
++ Open clickgui in mainmenu
++ Added SilentHotbar module
++ Added PointerESP Module
++ Added Fightbot module
++ Added ColorSettings option
++ Added Ignite Module
++ Added Noclip module
++ Added ChinaHat Module
++ Added MurderDector Module
++ Added Spider Module
++ Added hypixel speed lowhop
++ Added hypixel velocity
++ Added autoclicker onlyblock option
++ Added new button rendering method
++ Added alwaysbehind & duplicateprofile antibot
++ Added separate highlight & background border
++ Added simple flagcheck last server pos
++ Added Smooth hot-bar slot HUD module option
++ Added ChatBypass Module
++ Added custom hotbar
++ Added staffdetector velocity autoleave
++ Added ProjectileAimbot (otheritems & gravitytype)
++ Added velocity check staffdetector
++ Added fakelag min/max distance
++ Added BlockSafe Scaffold option
++ Added IntaveReduce velocity
++ Added vanilla options FDP v5.6.1
++ Added Intave Disabler
++ Added Killaura check scaffold/blink/noeat/blocking option
++ Added Invalidspeed antibot & fixed duplicateInTab/Name
++ Added improvements blink utils / outgoingValue blink mode
++ Added optimized Gradient Shader
++ Added improved Default Local Config
++ Updated HUD Elements:
+- Added block counter as default
+- Added borders width/colors
+- Added "onScaffold" options
+- Added "showBlock" options
+- Added "blockamount/blockcount" placeholder
+* Fixed effects null pointer issues
+* Fixed proper HUD elements GL reset
+* Fixed scaffold blocksafe, image color & text background scale
+* Fixed all gradient colors being shown
+* Fixed playsound ConcurrentModificationException
+* Fixed ChatBypass starting
+* Fixed ConcurrentModificationException Crash
+* Fixed default vanilla flight not flying
+* Fixed blink utils suffix
+* Fixed vulcan 0 0 velocity
+* Fixed killaura F5 deprecation
+* Fixed attempt at fixing concurrent exceptions
+* Fixed wireframe storageesp
+* Fixed default text background scale
+* Fixed bedbreaker ignoreOwnBed improvement
+* Fixed Text Element CPS display
+~ Refactored and cleaned up YZY ClickGUI
+~ Removed useless check in mixinguiscreen
+~ Improved performance (do not change Kotlin version)
+~ Replaced "on/off" rotation modes with a boolean "Rotations" option
+~ Cleaned up ChatBypass module
+~ Reverted blink
+~ Ported blink options FDP v5.6.1
+~ Cleaned up disabler module / hypixel disabler
+~ Simplified the way of making rotation options for modules
+~ Cleaned up and optimized Arraylist Element
 ~ B8 (dd25a2e)
 + Added GuiTheme Color
 + Added FreeLook module
