@@ -1,4 +1,6 @@
-~ B10 (#6f4c3a7)
+~ B11 (special before Christmas...(?))
+    SOON..
+~ B10 (#)
 + Updated All Configs (.config list or open SideGUI)
 + New SideGUI ColorThemeClient
 + New SideGUI FileManager
