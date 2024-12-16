@@ -1,3 +1,64 @@
+~ B10 (#6f4c3a7)
++ Updated All Configs (.config list or open SideGUI)
++ New SideGUI ColorThemeClient
++ New SideGUI FileManager
++ Improved Rotations code
++ Added New Event System
++ Added Reset option for all modules.
++ Added FireFlies
++ Added HitBubbles module.
++ Added JumpCircles module.
++ Added Notifies module.
++ Added MaxRetrievalWaitingTime
++ Added Keystrokes HUD element.
++ Added OnlyWhenEnemyGoesBack option to SuperKnockback.
++ Added Backtrack with Min/Max delays.
++ Added Visual effects for missed hits in KillAura.
++ Added Int/Float range options for modules.
++ Added Dome visuals to TNTESP module.
++ Added Breadcrumbs with line height support.
++ Added RenderSelf option to Nametags.
++ Added CombatVisuals new Mark(Circle).
++ Added Eagle: onlyOnGround option to Scaffold.
++ Added Legitimize Rotation option for rotation modules.
++ Added ReverseYaw rotation support for Scaffold.
++ Added InventoryMove motion improvements.
++ Added Fireball Indicator option.
++ Added Position Interpolation for Projectiles Module.
++ Added Improved rotation speed curve with more realistic zigzag patterns for RandomizeRotations.
++ Added ClickRecorder Module.
++ Added OldGrim Noweb and Nofluid options.
++ Added support for Intave14 Lowhop and InitialBoost.
++ added NoFall MLG (supports block edges, proper placements/retrievals).
+* Fixed ClickGUI cloud configs not working
+* Fixed FakeLag packet order issues, achieving near-perfect accuracy.
+* Fixed Backtrack breaking KillAura's new entity-finding method.
+* Fixed KillAura not swinging when any client GUI is active.
+* Fixed Smooth-Hotbar using incorrect speed calculations.
+* Fixed NameTags blocks visibility issue.
+* Fixed Breadcrumbs rendering issues with player hand effects.
+* Fixed SilentHotbar not detecting scroll-switched slots.
+* Fixed AutoTool preventing manual slot switching.
+* Fixed Designer Screen using incorrect font height.
+* Fixed Integer/Float values not loading from config.
+* Fixed Scaffold failing to rotate at small differences using StartFirstRotationSlow.
+* Fixed Custom Visuals not being displayed properly on-screen.
+* Fixed Tracers Lines drawing incorrectly to enemy positions.
+* Fixed FreeCam rendering and input detection issues.
+* Fixed AutoClicker NPE when the player's hand is empty.
+* Fixed KillAura Sprint handling and targeting issues.
+* Fixed Scaffold Down Option incorrectly hidden.ance in ClickGUI.
+~ Refactored FontRenderer for optimized performance in ClickGUI.
+~ Refactored Event System with stateless singleton events.
+~ Cleaned up PointerESP with team-based coloring improvements.
+~ Simplified Rotation Logic for better performance and customization.
+~ Improved KillAura Switch Mode logic and performance.
+~ Moved utilities into their respective categories.
+~ Updated SilentHotbar for better slot reset behavior.
+~ Optimized BlockESP to use coroutines.
+~ Removed unnecessary code checks across modules.
+~ Converted files from Java to Kotlin for improved readability and functionality.
+~ Cleaned up YZY GUI animations and loading issues.+
 ~ B9 (#5635c78)
 + Added ClickGUI style FDP
 + Added ClickGUI style YZY
