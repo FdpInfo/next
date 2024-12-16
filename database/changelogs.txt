@@ -6,6 +6,7 @@
 + New SideGUI FileManager
 + Improved Rotations code
 + Added New Event System
++ Save Color Theme config
 + Added Reset option for all modules.
 + Added FireFlies
 + Added HitBubbles module.
