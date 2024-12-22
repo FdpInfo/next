@@ -1,5 +1,61 @@
-~ B11 (special before Christmas...(?))
-    SOON..
+~ B11 ()
++ LRU Cache for GameFontRenderer & AWTFontRenderer.
++ Optimized Text Rendering with GameFontRenderer.
++ Scaffold Eagle Mode (OnGround, OnAir, Both).
++ StaffDetector Originera Mode.
++ New Swing Theme (LookAndFeel).
++ API Font Extraction.
+~ Major Improvements
+~ Refactored Event System.
+~ Refactored Rendering Pipeline.
+~ Optimized Memory Usage for Text.
+~ Improved FDP DropDownGUI Performance.
+~ SideGUI Cleanup & Outline.
+~ TickBase & Packet Handling Improvements.
+~ KillAura AutoBlock Improvements.
+~ Optimized Entity Searching.
+~ Refactored API Code.
+~ Converted Files to Kotlin.
+* Fixed Font Issues on Older Java.
+* Fixed Glsl Shader Issues on macOS.
+* Fixed Crash with AutoArmor.
+* Fixed Issues with TickBase and Backtrack.
+* Fixed NoFall MLG Rotations.
+* Fixed FreeLook with Tracers.
+* Fixed  Scaffold Raycast Logic.
+* Fixed CombatManager NullPointerException.
+* Fixed Incorrect Colors on Teams.
+* Fixed Missing Colors on Cached Text.
++ Crash Report Dialog Improvements.
++ MacroManager Direct Instance.
++ TimerRange OnForwardOnly & IsInLiquid.
++ AssumeNonVolatile in Scoreboard.
++ forceBlockWhenStill Option for KillAura AutoBlock.
+~ Improvements
+~ Cleaned up `TimerRange` module.
+~ Refactored HUD Config.
+~  `ModuleManager.get` returns nullable.
+~ Improved Scoreboard Height.
+~ Main Menu Cleanup.
+~ ClientTheme Logic Improvements.
+~ Remapper Optimization.
+~  Gson API Refactoring.
+~  GuiScreen Refactoring.
+~ Script Module Event Optimization.
+~ Optimized BlockESP.
+~ Moved Utilities to Categories.
+* Corrected Text Alignment & Width.
+* Fixed CustomHotbar Font Issue.
+* Fixed Invalid BlockESP Positions.
+* Fixed Forwardtrack Model Color.
+* Fixed Model Element Rendering with TargetHUD.
+* Fixed Custom Font Property.
+* Fixed Noslow & Sprint.
+* Fixed Duplicate AutoDisable Call.
+* Fixed Incorrect Module Events.
+* Fixed Combat Visuals Events.
+* Corrected Missing Glyph Fallback.
+* Fixed Scoreboard Blending.
 ~ B10 (#20ff477)
 + Updated All Configs (.config list or open SideGUI)
 + New SideGUI ColorThemeClient
@@ -28,11 +84,11 @@
 + Added InventoryMove motion improvements.
 + Added Fireball Indicator option.
 + Added Position Interpolation for Projectiles Module.
-+ Added Improved rotation speed curve with more realistic zigzag patterns for RandomizeRotations.
 + Added ClickRecorder Module.
 + Added OldGrim Noweb and Nofluid options.
 + Added support for Intave14 Lowhop and InitialBoost.
 + added NoFall MLG (supports block edges, proper placements/retrievals).
++ Added Improved rotation speed curve for RandomizeRotations.
 * Fixed ClickGUI cloud configs not working
 * Fixed FakeLag packet order issues, achieving near-perfect accuracy.
 * Fixed Backtrack breaking KillAura's new entity-finding method.
@@ -51,7 +107,7 @@
 * Fixed AutoClicker NPE when the player's hand is empty.
 * Fixed KillAura Sprint handling and targeting issues.
 * Fixed Scaffold Down Option incorrectly hidden.ance in ClickGUI.
-~ Refactored FontRenderer for optimized performance in ClickGUI.
+~ FontRenderer for optimized performance in ClickGUI.
 ~ Refactored Event System with stateless singleton events.
 ~ Cleaned up PointerESP with team-based coloring improvements.
 ~ Simplified Rotation Logic for better performance and customization.
