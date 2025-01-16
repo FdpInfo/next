@@ -1,3 +1,135 @@
+~ B12 (#57c18ad)
++ Added Watchdog Inventory & MotionHop Disabler.
++ Added Verus Experimental Disabler.
++ Added Beta Verus Disabler.
++ Added WaterMark in GUI.
++ Added Cleanup Disablers.
++ Added Blend Colors Feature.
++ Added Hat Texture Option.
++ Added China Hat Recode.
++ Added Show Server TPS in Watermaker.
++ Added ClickGUI AutoScroll.
++ Added Freelook Autof5 Option.
++ Added KillAura: GenerateSpotBasedOnDistance Option.
++ Added ArrayList FadeColor Improvements.
++ Added New Color Themes.
++ Added ESP Gaussian Mode.
++ Added API with Dispatcher.
++ Added RenderModel Visual Option to FakeLag.
++ Added Color Themes (ClientTheme).
++ Added HexColor Mode.
++ Added ColorValue Module.
++ Added Remove Unused Fonts.
++ Added Nursultan & Inter Font.
++ Added FontValue/Range Value in Settings Components.
++ Added Image Shadow and Color Options.
++ Added Spacing Color in Setting Components.
++ Added Custom Alts Name Prefix.
++ Added Labymod Client Brand & Updated LC Version.
++ Added Spacing Support for Multiple Color Values.
++ Added Color Picker Display on Right Click.
++ Added Easier Handling of Sliders & Opacity Slider.
++ Added Basic Configuration Support.
++ Added Caching Implementation.
++ Added Color Picker Position Fixes.
++ Added Option Modifying Support.
++ Added Hue Slider Synchronization with Non-ClickGUI Value Changes.
++ Added SnakeGame Enhancements:
+  - Dynamic Obstacles Based on Game Modes (Easy, Normal, Hard).
+  - Collision Detection with Obstacles and Snake Body.
+  - High Score Tracking.
+  - Gradient Borders and Dynamic Color Transitions.
+  - Enhanced Movement Logic to Prevent Opposite-Direction Inputs.
+  - Three Difficulty Modes with Distinct Speeds and Obstacle Mechanics.
+  - HUD Elements Displaying Score, High Score, and Current Game Mode.
+  - Optimized Food and Obstacle Placement.
+  - Modular Refactoring for Improved Maintainability.
+  - Reset Logic Improvements for Proper Game State Reinitialization.
+  - Performance Optimizations.
+  - Smoother and More Responsive Input Handling.
++ Added ColorValue Enhancements:
+  - Separate Hue Slider Value.
+  - Improved Text Appearance When Color Picker is Inactive.
+  - Config System Support.
+  - Opacity Slider.
++ Added ScriptManager Cleanup & File Chooser Improvements:
+  - Non-exposure of Mutable Collections.
+  - Fixed Wrong Script Load ZIP Command.
+  - Load ZIP Cleanup.
+  - Multiple File Filters.
+  - File Filter Constants.
++ Added Sneak Timing Options for Scaffold.
++ Added Copy Button for Error Dialog.
+~ Updated JumpCircles for Better Performance.
+~ Updated ColorValue in Setting Components Refactor.
+~ Updated Optimized JSON Loading from Web.
+~ Updated FontRenderer Optimizations.
+~ Updated API Refactor for Asynchronous Image Loading.
+~ Updated GUI Cape Manager Utilization of Non-Suspending Calls.
+~ Updated Error Handling in GUI Update for API Reload Failures.
+~ Updated Loading Bar and Progress Updates in GUI Update.
+~ Updated Improved Logging in API Connector Utilities.
+~ Updated Scheduled API Checks and Image Loading During Client Startup.
+~ Updated Lazy Loading and LRU Cache Size Optimization.
+~ Updated Optimized Usage of Triple.
+~ Updated Renamed TickActions Extensions of Module.
+~ Updated YZYGUI FontRenderer Improvements.
+~ Updated SettingComponents Cleanup.
+~ Updated Modules Code Cleanup and Refactoring.
+~ Updated Optimized Entity Rendering with EntityLookup API.
+~ Updated Default Implementation of Listenable HandleEvents.
+~ Updated FontRenderer Optimizations for ClickGUI Performance.
+~ Updated Refactored Event System with Stateless Singleton Events.
+~ Updated PointerESP Cleanup with Team-Based Coloring Improvements.
+~ Updated Simplified Rotation Logic for Enhanced Performance and Customization.
+~ Updated Improved KillAura Switch Mode Logic and Performance.
+~ Updated Utilities Moved to Respective Categories.
+~ Updated SilentHotbar for Better Slot Reset Behavior.
+~ Updated BlockESP Optimized with Coroutines.
+~ Updated Removed Unnecessary Code Checks Across Modules.
+~ Updated Converted Files from Java to Kotlin for Enhanced Readability and Functionality.
+~ Updated Cleaned Up YZY GUI Animations and Loading Issues.
+~ Updated Modules Code Cleanup.
+* Fixed Color Picker Visibility When Armor Element is Disabled.
+* Fixed Duplicate Option Names.
+* Fixed NoSlow Functionality.
+* Fixed Sliders Synchronization When Loading the Client.
+* Fixed Scroll Visibility.
+* Fixed ClickGUI Cloud Configs.
+* Fixed FakeLag Packet Order Issues for Near-Perfect Accuracy.
+* Fixed Backtrack Breaking KillAura's New Entity-Finding Method.
+* Fixed KillAura Swinging When Any Client GUI is Active.
+* Fixed Smooth-Hotbar Incorrect Speed Calculations.
+* Fixed NameTags Blocks Visibility Issue.
+* Fixed Breadcrumbs Rendering Issues with Player Hand Effects.
+* Fixed SilentHotbar Not Detecting Scroll-Switched Slots.
+* Fixed AutoTool Preventing Manual Slot Switching.
+* Fixed Designer Screen Incorrect Font Height.
+* Fixed Integer/Float Values Not Loading from Config.
+* Fixed Scaffold Failing to Rotate at Small Differences Using StartFirstRotationSlow.
+* Fixed Custom Visuals Not Displayed Properly on Screen.
+* Fixed Tracers Lines Drawing Incorrectly to Enemy Positions.
+* Fixed FreeCam Rendering and Input Detection Issues.
+* Fixed AutoClicker NPE When Player's Hand is Empty.
+* Fixed KillAura Sprint Handling and Targeting Issues.
+* Fixed Scaffold Down Option Incorrectly Hidden.
+* Fixed PacketDebugger Displaying Obfuscated Packet Fields.
+* Fixed Entity Lookup Rendering Position for Unicode Texts.
+* Fixed LRU Cache for getStringWidth.
+* Fixed AutoRod Invalid Slot.
+* Fixed NameTags Rendering with Bobbing Effect When Tracers Enabled.
+* Fixed BedPlates Module Displaying Culled Information.
+* Fixed BedPlates Update Loop.
+* Fixed Scaffold Slot Switch Not Following Vanilla Logic.
+- Cleanup SnakeGame Module.
+- Cleanup Disabler Module.
+- Cleanup SettingComponents.
+- Added StaffDetector asspixel and oc-tc Modes.
+- Removed SimpleFontManager.
+- Renamed TickActions Extensions of Module.
+- Refactored Scaffold Sneak Options.
+- Refactored GUI New Chat Mixin for Code Cleanup.
+- Converted Files to Kotlin for Improved Readability and Functionality.
 ~ B11 (#dac565e)
 + LRU Cache for GameFontRenderer & AWTFontRenderer.
 + Optimized Text Rendering with GameFontRenderer.
