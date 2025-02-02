@@ -1,4 +1,3 @@
-No
 * Fixed Color Picker Visibility When Armor Element is Disabled.
 * Fixed Duplicate Option Names.
 * Fixed NoSlow Functionality.
@@ -29,4 +28,12 @@ No
 * Fixed NameTags Rendering with Bobbing Effect When Tracers Enabled.
 * Fixed BedPlates Module Displaying Culled Information.
 * Fixed BedPlates Update Loop.
+* Fixed Scaffold Slot Switch Not Following Vanilla Logic.
+* Fixed TEST
+* Fixed Scaffold Slot Switch Not Following Vanilla Logic.
+* Fixed Scaffold Slot Switch Not Following Vanilla Logic.
+* Fixed Scaffold Slot Switch Not Following Vanilla Logic.
+* Fixed Scaffold Slot Switch Not Following Vanilla Logic.
+* Fixed Scaffold Slot Switch Not Following Vanilla Logic.
+* Fixed Scaffold Slot Switch Not Following Vanilla Logic.
 * Fixed Scaffold Slot Switch Not Following Vanilla Logic.
