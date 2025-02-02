@@ -30,10 +30,4 @@
 * BedPlates Module Displaying Culled Information.
 * BedPlates Update Loop.
 * Scaffold Slot Switch Not Following Vanilla Logic.
-* TEST
-* TEST
-* TEST
-* TEST
-* TEST
-* TEST
-* TEST
+#39 lines
