@@ -1,1 +1,32 @@
 No
+* Fixed Color Picker Visibility When Armor Element is Disabled.
+* Fixed Duplicate Option Names.
+* Fixed NoSlow Functionality.
+* Fixed Sliders Synchronization When Loading the Client.
+* Fixed Scroll Visibility.
+* Fixed ClickGUI Cloud Configs.
+* Fixed FakeLag Packet Order Issues for Near-Perfect Accuracy.
+* Fixed Backtrack Breaking KillAura's New Entity-Finding Method.
+* Fixed KillAura Swinging When Any Client GUI is Active.
+* Fixed Smooth-Hotbar Incorrect Speed Calculations.
+* Fixed NameTags Blocks Visibility Issue.
+* Fixed Breadcrumbs Rendering Issues with Player Hand Effects.
+* Fixed SilentHotbar Not Detecting Scroll-Switched Slots.
+* Fixed AutoTool Preventing Manual Slot Switching.
+* Fixed Designer Screen Incorrect Font Height.
+* Fixed Integer/Float Values Not Loading from Config.
+* Fixed Scaffold Failing to Rotate at Small Differences Using StartFirstRotationSlow.
+* Fixed Custom Visuals Not Displayed Properly on Screen.
+* Fixed Tracers Lines Drawing Incorrectly to Enemy Positions.
+* Fixed FreeCam Rendering and Input Detection Issues.
+* Fixed AutoClicker NPE When Player's Hand is Empty.
+* Fixed KillAura Sprint Handling and Targeting Issues.
+* Fixed Scaffold Down Option Incorrectly Hidden.
+* Fixed PacketDebugger Displaying Obfuscated Packet Fields.
+* Fixed Entity Lookup Rendering Position for Unicode Texts.
+* Fixed LRU Cache for getStringWidth.
+* Fixed AutoRod Invalid Slot.
+* Fixed NameTags Rendering with Bobbing Effect When Tracers Enabled.
+* Fixed BedPlates Module Displaying Culled Information.
+* Fixed BedPlates Update Loop.
+* Fixed Scaffold Slot Switch Not Following Vanilla Logic.
