@@ -35,29 +35,29 @@
 + Added Option Modifying Support.
 + Added Hue Slider Synchronization with Non-ClickGUI Value Changes.
 + Added SnakeGame Enhancements:
-- Dynamic Obstacles Based on Game Modes (Easy, Normal, Hard).
-- Collision Detection with Obstacles and Snake Body.
-- High Score Tracking.
-- Gradient Borders and Dynamic Color Transitions.
-- Enhanced Movement Logic to Prevent Opposite-Direction Inputs.
-- Three Difficulty Modes with Distinct Speeds and Obstacle Mechanics.
-- HUD Elements Displaying Score, High Score, and Current Game Mode.
-- Optimized Food and Obstacle Placement.
-- Modular Refactoring for Improved Maintainability.
-- Reset Logic Improvements for Proper Game State Reinitialization.
-- Performance Optimizations.
-- Smoother and More Responsive Input Handling.
++ Dynamic Obstacles Based on Game Modes (Easy, Normal, Hard).
++ Collision Detection with Obstacles and Snake Body.
++ High Score Tracking.
++ Gradient Borders and Dynamic Color Transitions.
++ Enhanced Movement Logic to Prevent Opposite-Direction Inputs.
++ Three Difficulty Modes with Distinct Speeds and Obstacle Mechanics.
++ HUD Elements Displaying Score, High Score, and Current Game Mode.
++ Optimized Food and Obstacle Placement.
++ Modular Refactoring for Improved Maintainability.
++ Reset Logic Improvements for Proper Game State Reinitialization.
++ Performance Optimizations.
++ Smoother and More Responsive Input Handling.
 + Added ColorValue Enhancements:
-- Separate Hue Slider Value.
-- Improved Text Appearance When Color Picker is Inactive.
-- Config System Support.
-- Opacity Slider.
++ Separate Hue Slider Value.
++ Improved Text Appearance When Color Picker is Inactive.
++ Config System Support.
++ Opacity Slider.
 + Added ScriptManager Cleanup & File Chooser Improvements:
-- Non-exposure of Mutable Collections.
-- Fixed Wrong Script Load ZIP Command.
-- Load ZIP Cleanup.
-- Multiple File Filters.
-- File Filter Constants.
++ Non-exposure of Mutable Collections.
++ Fixed Wrong Script Load ZIP Command.
++ Load ZIP Cleanup.
++ Multiple File Filters.
++ File Filter Constants.
 + Added Sneak Timing Options for Scaffold.
 + Added Copy Button for Error Dialog.
 ~ Updated JumpCircles for Better Performance.
