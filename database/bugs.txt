@@ -28,36 +28,14 @@
 * StackOverFlow from NoRotationDisabler option from Disabler.
 * KillAura not working when Fucker is enabled and player is close to own bed.
 * Adapt Fonts old version JSON format.
-#b12
-* Color Picker Visibility When Armor Element is Disabled.
-* Duplicate Option Names.
-* NoSlow Functionality.
-* Sliders Synchronization When Loading the Client.
-* Scroll Visibility.
-* ClickGUI Cloud Configs.
-* FakeLag Packet Order Issues for Near-Perfect Accuracy.
-* Backtrack Breaking KillAura's New Entity-Finding Method.
-* KillAura Swinging When Any Client GUI is Active.
-* Smooth-Hotbar Incorrect Speed Calculations.
-* NameTags Blocks Visibility Issue.
-* Breadcrumbs Rendering Issues with Player Hand Effects.
-* SilentHotbar Not Detecting Scroll-Switched Slots.
-* AutoTool Preventing Manual Slot Switching.
-* Designer Screen Incorrect Font Height.
-* Integer/Float Values Not Loading from Config.
-* Scaffold Failing to Rotate at Small Differences Using StartFirstRotationSlow.
-* Custom Visuals Not Displayed Properly on Screen.
-* Tracers Lines Drawing Incorrectly to Enemy Positions.
-* FreeCam Rendering and Input Detection Issues.
-* AutoClicker NPE When Player's Hand is Empty.
-* KillAura Sprint Handling and Targeting Issues.
-* Scaffold Down Option Incorrectly Hidden.
-* PacketDebugger Displaying Obfuscated Packet Fields.
-* Entity Lookup Rendering Position for Unicode Texts.
 * LRU Cache for getStringWidth.
 * AutoRod Invalid Slot.
 * NameTags Rendering with Bobbing Effect When Tracers Enabled.
 * BedPlates Module Displaying Culled Information.
 * BedPlates Update Loop.
 * Scaffold Slot Switch Not Following Vanilla Logic.
+* Scroll Visibility.
+* ClickGUI Cloud Configs.
+* AutoClicker NPE When Player's Hand is Empty.
+* KillAura Sprint Handling and Targeting Issues.
 #39 lines
