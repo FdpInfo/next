@@ -1,5 +1,6 @@
 ~ B13 (#2e1a894)
 + Added AntiCheatDector Module.
++ Added FontManager UI.
 + Added RenderAimPointBox option for KillAura.
 + Added AntiCheat detect in watermark.
 + Added watermark element.
