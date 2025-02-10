@@ -1,3 +1,111 @@
+~ B13 ()
++ Added AntiCheatDector Module.
++ Added RenderAimPointBox option for KillAura.
++ Added AntiCheat detect in watermark.
++ Added watermark element.
++ Added check Java version at start.
++ Added Grizzly & matrix anticheat detect
++ Added new hud visuals
++ Added (Custom) FontManager.
++ Added notifications color mode.
++ Added Miniblox disabler.
++ Added expanded Velocity range.
++ Added HotKeys element.
++ Added new fonts.
++ Added KillAura GenerateClicksBasedOnDistance option.
++ Added attack event notifier.
++ Added notifier drink alert.
++ Added Font FIleFilter.
++ Added value owner.
++ Added color value use client theme utils.
++ Added Git properties update 2.4.0 to 2.4.2.
++ Added AltManager move up/move down
++ Added DrawRectOnTitle option for ScoreboardElement, optional edge rounding options for rectangles.
++ Added category icons as I am planning on upgrading the default HUD look.
++ Added merged item notifier in notifier module.
++ Added scaffold telly ticksuntilrots range could be useful to bypass ac by randomizing.
++ Added FrostBlur suboption to TargetHUD.
++ Added Improved range value options handling.
++ Added jump circles not texture mode / cleanup.
++ Added frost shader.
++ Added arraylist better look - icons & improvisations.
++ Added intave mode - anticheat detector.
++ Added time in notification.
++ Added polar/notification AntiCheatDetector.
++ Added better detect in modes AntiCheatDetector.
++ Added scoreboard element now can expand from the right side if left horizontal side is chosen.
++ Added better keystroke default settings.
++ Added keystrokes shrink + border options.
++ Added invcleaner shears & tnt slot sort.
++ Added blockstoeagle & maxsneakticks range.
++ Added Outline Rect in FDPDropdown/roundedRectRadius option.
++ Added tabgui/scoreboard corners & icons options.
++ Added color rgba in settingcomponent.
++ Added text value in setting components improvements.
++ Added ClickGUI Text Editor functionality: Simplified text and color picker configuration; Expanded options using right-click on color name (hex text); R-G-B-A options navigation using up/down arrow keys.
++ Added hotkey color mode / padding.
++ Added Configurable.isExpanded.
++ Added f*cker module improvement: Works perfectly when moving around; Hypixel mode break block above the bed then the bed regardless of position; Surroundings mode doesn't constantly switch to breaking a new block if the last target isnt obstructed or out of range.
++ Added New rotation randomization pattern mode LazyFlick + MinRotationDifferenceResetTiming option (dedicated to polar anticheat).
+* Backtrack freezing when condition isn't met.
+* Armor color in armoritems vertical /also thanks xitado.
+* RotationSettings ResetTicks condition.
+* Remapper issues.
+* Editor panel nullpointerexc.
+* Switch language freezing.
+* Rotation settings missed in NoFall MLG and NoRotateSet.
+* flight -> fly.
+* Duplicated rotation settings in Scaffold.
+* True positions not updating when target is out of screen.
+* Options in NoRotateSet.
+* ByteBuffer flip calls causing issues on non Java 8 versions.
+* AngleResetDifference option not being visible in NoRotateSet.
+* Few settings not working / ForwardTrack causing NPE during render.
+* Tabgui random nonsense.
+* Fixes in layout.
+* Fonts issues.
+* Fixed Wrong font download.
+* Fixed Reverted circle smoothness because the point mode does not adjust properly to game scaling.
+* Fixed Anticheat detect only in new world.
+* Fixed Github artifact@v4.
+* Fixed Addall cleanup.
+* Fixed Hat making hotbar blocks overlap amount texts.
+* Fixed Nameprotect handle in watermarker.
+* Fixed StackOverFlow from NoRotationDisabler option from Disabler.
+* Fixed KillAura not working when Fucker is enabled and player is close to own bed.
+* Fixed Adapt Fonts old version JSON format.
+* Fixed Fix shadow in imagebutton.
+* Fixed Excluded values in Configurable.values
+* Fixed Notification debug
+~ Refactored Icon local.
+~ Refactored Proper implementation for air/ground ticks.
+~ Refactored Value system, Kotlin 2.0.21.
+~ Refactored Check domain on scoreboard title & snakegame cleanup.
+~ Refactored Recode eagle maxsneaktime.
+~ Refactored Applied back red formatting.
+~ Refactored Fucker cleanup code.
+~ Refactored Java detection only for first start.
+~ Refactored ClickGUI Panel
+~ Refactored Improve downloads: fix StaffDetector incorrect use, preload SRG remapper file, HTTP code cleanup.
+~ Refactored ClickGUI Panel
+~ Chores: Small Scaffold Cleanup; Altmanager chinese translation & translation button/text; Tower cleanup; update build.gradle - remove implementation alias; Min/Max variables replaced with ranged values. Should free up like 2% of screen space.
+~ Chores: Applied back red formatting.
+~ Refactored Recode eagle maxsneaktime
+~ Refactored Value System: Kotlin 2.0.21
+~ Refactored Panel
+~ Refactored ArrayListBetter Look
+~ Refactored Cleanup mainmenu / fix background / changelog/bugs message
+~ Refactored Cleanup quittbutton
+~ Refactored Cleanup HitBubles
+~ Refactored Cleanup antifireball
+~ Refactored Cleanup effects / modern mode / color mode / background mode / fixes in borders
+~ Refactored Cleanup anticheatdetector
+~ Refactored ArrayList Icon
+~ Refactored Color Modes in Notifications and Fixed styles
+~ Refactored Reverted circle smoothness because the point mode does not adjust properly to game scaling.
+~ Refactored Improve downloads: fix StaffDetector incorrect use, preload SRG remapper file, HTTP code cleanup.
+~ Refactored Proper implementation for air/ground ticks.
+~ lombok from 1.18.34 to 1.18.36.
 ~ B12 (#57c18ad)
 + Added Watchdog Inventory & MotionHop Disabler.
 + Added Verus Experimental Disabler.

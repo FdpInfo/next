@@ -1,3 +1,33 @@
+#b13
+* Backtrack freezing.
+* Armor color in armoritems vertical
+* RotationSettings ResetTicks condition.
+* Remapper issues.
+* Editor panel nullpointerexc.
+* Switch language freezing.
+* Fix shadow in imagebutton.
+* Fixes in layout.
+* Fonts issues.
+* Wrong font download.
+* Notification debug
+* Options in NoRotateSet.
+* Excluded values in Configurable.values
+* Github artifact@v4.
+* Addall cleanup.
+* Nameprotect handle in watermarker.
+* Tabgui random nonsense.
+* Rotation settings missed in NoFall MLG and NoRotateSet.
+* Duplicated rotation settings in Scaffold.
+* True positions not updating when target is out of screen.
+* ByteBuffer flip calls causing issues on non Java 8 versions.
+* AngleResetDifference option not being visible in NoRotateSet.
+* Few settings not working / ForwardTrack causing NPE during render.
+* Reverted circle smoothness because the point mode does not adjust properly to game scaling.
+* Anticheat detect only in new world.
+* Hat making hotbar blocks overlap amount texts.
+* StackOverFlow from NoRotationDisabler option from Disabler.
+* KillAura not working when Fucker is enabled and player is close to own bed.
+* Adapt Fonts old version JSON format.
 #b12
 * Color Picker Visibility When Armor Element is Disabled.
 * Duplicate Option Names.
