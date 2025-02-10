@@ -22,7 +22,7 @@
 + Added Git properties update 2.4.0 to 2.4.2.
 + Added AltManager move up/move down
 + Scoreboardedge rounding options for rectangles.
-+ Added category icons as I am planning on upgrading the default HUD look.
++ Added TabGUI icons.
 + Added merged item notifier in notifier module.
 + Added FrostBlur suboption to TargetHUD.
 + Added Improved range value options handling.
@@ -44,15 +44,20 @@
 + Added blockstoeagle & maxsneakticks range.
 + Scaffold telly ticksuntilrots range could be useful to bypass ac by randomizing.
 + Added polar/notification AntiCheatDetector.
-+ Added better detect in modes AntiCheatDetector.
++ Added compass bypass in AntiCheatDetects.
 + Added scoreboard element now can expand from the right side if left horizontal side is chosen.
 + Added Outline Rect in FDPDropdown/roundedRectRadius option.
 + Added tabgui/scoreboard corners & icons options.
 + Added color rgba in settingcomponent.
 + Added text value in setting components improvements.
-+ Added ClickGUI Text Editor functionality: Simplified text and color picker configuration; Expanded options using right-click on color name (hex text); R-G-B-A options navigation using up/down arrow keys.
-+ Added f*cker module improvement: Works perfectly when moving around; Hypixel mode break block above the bed then the bed regardless of position; Surroundings mode doesn't constantly switch to breaking a new block if the last target isnt obstructed or out of range.
++ Added ClickGUI Text Editor functionalitY
++ Simplified text and color picker configuration
++ Expanded options using right-click on color name (hex text)
++ R-G-B-A options navigation using up/down arrow keys.
++ Added f*cker Works perfectly when moving around
++ f*cker Hypixel mode break block above the bed then the bed regardless of position
 + Added New rotation randomization pattern mode LazyFlick + MinRotationDifferenceResetTiming option (dedicated to polar anticheat).
++ Surroundings mode doesn't constantly switch to breaking a new block if the last target isnt obstructed or out of range.
 * Backtrack freezing when condition isn't met.
 * Armor color in armoritems vertical.
 * RotationSettings ResetTicks condition.
