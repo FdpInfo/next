@@ -22,7 +22,6 @@
 * ByteBuffer flip calls causing issues on non Java 8 versions.
 * AngleResetDifference option not being visible in NoRotateSet.
 * Few settings not working / ForwardTrack causing NPE during render.
-* Reverted circle smoothness because the point mode does not adjust properly to game scaling.
 * Anticheat detect only in new world.
 * Hat making hotbar blocks overlap amount texts.
 * StackOverFlow from NoRotationDisabler option from Disabler.
