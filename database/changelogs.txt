@@ -1,9 +1,9 @@
-~ B14 ()
+~ B14 (#8dde77c)
 + ClickGUI Dropdown pretty Gradients
 + Added Better Rotations and correct movement for Polar/Grim AntiCheat.
 + Added velocity GrimVertical mode.
 + Added desync fix disabler; removed patched Miniblox disabler.
-+ Added custom model option for female & boobs mode.
++ Added custom model option for Female & BOOBS EDITION mode.
 + Added multiTargets option in TargetHUD.
 + Added TabGUI Module.
 + Added DashTrail Module.
