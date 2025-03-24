@@ -1,24 +1,24 @@
-#b13
-* Backtrack freezing.
-* Armor color in armoritems vertical
-* RotationSettings ResetTicks condition.
-* Remapper issues.
-* Editor panel nullpointerexc.
-* Switch language freezing.
-* Fix shadow in imagebutton.
-* Fixes in layout.
-* Fonts issues.
-* Wrong font download.
-* Notification debug
-* Options in NoRotateSet.
-* Excluded values in Configurable.values
-* Github artifact@v4.
-* Addall cleanup.
-* Nameprotect handle in watermarker.
-* Tabgui random nonsense.
-* Rotation settings missed in NoFall MLG and NoRotateSet.
-* Duplicated rotation settings in Scaffold.
-* True positions not updating when target is out of screen.
+#b14
+* Grim/Polar Fake Alerts
+* JumpEvent spams in singleplayer mode.
+* FakeLag RenderModel and AutoWalk conflict causing concurrent modifications.
+* Projectiles rendering for non-selected entities.
+* Download button not showing in popup/update.
+* Hit bubbles FOV causing black screens.
+* Targets borders issues.
+* KillAura invalid prediction.
+* TargetHUD background rendering.
+* Jumpcircles black screen bug.
+* DashTrail setDirection issue.
+* Client user-agent issue.
+* SideGUI losing focus when clickGUI is open.
+* KillAura ClickOnly option triggering unintended clicks.
+* Lunar brand rendering issue.
+* Grim BadPacketsV alert issue.
+* Scoreboard visual issues when using Minecraft font.
+* KillAura AutoBlock not updating block status after manually switching slots.
+* FontRenderer crash when text input is null.
+* FreeLook visual glitches when screen is unfocused.
 * ByteBuffer flip calls causing issues on non Java 8 versions.
 * AngleResetDifference option not being visible in NoRotateSet.
 * Few settings not working / ForwardTrack causing NPE during render.

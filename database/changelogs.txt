@@ -1,3 +1,72 @@
+~ B14 ()
++ ClickGUI Dropdown pretty Gradients
++ Added Better Rotations and correct movement for Polar/Grim AntiCheat.
++ Added velocity GrimVertical mode.
++ Added desync fix disabler; removed patched Miniblox disabler.
++ Added custom model option for female & boobs mode.
++ Added multiTargets option in TargetHUD.
++ Added TabGUI Module.
++ Added DashTrail Module.
++ Added LineGraphs Module.
++ Added DamageParticle Module.
++ Added cache improvement for rearview module.
++ Added Wings RGB color option & onlyThirdPerson setting.
++ Added TNTTRails options (Lines, Area, Particles).
++ Added KillAura ForceFirstHit option.
++ Added smoother KillAura AimPointBox positions.
++ Added glint color value option.
++ Added notifier item alerts for armor enchants, Fireball, Ender Pearl, TNT, and other items.
++ Added notifications background mode.
++ Added CombatManager onHitEntity listeners.
++ Added freezeTarget option in TargetHUD.
++ Added padding option in TargetHUD.
++ Added hit bubbles speed feature.
++ Added option to show Ping in TabGUI.
++ Added breast physics for female mode.
++ Added 'female no armor' option.
++ Added female mode compatibility with armors.
++ Added enable fake lag render model option.
++ Added async tick support with new async/loop event handlers implementation.
++ Added background option for popups.
++ Added sidebar scroll for sideGUI.
++ Added components in sideGUI.
++ Added dropdown custom color options.
++ Added active panel gradient rect option in dropdown.
++ Added dropdown drawGradientRect feature.
++ Added clickGUI scale option in dropdown.
++ Added gradient rect header in dropdown GUI.
++ Added Discord URL update.
++ Added extra decimal place for float value options.
++ Added subjective settings for module values.
++ Added On-Press animations for Keystrokes.
++ Added selective corner rounding for ArrayList element rectangles.
++ Added gradient colors and improved button compositions.
+* Fixed hit bubbles FOV causing black screens.
+* Fixed targets borders issues.
+* Fixed KillAura invalid prediction.
+* Fixed TargetHUD background rendering.
+* Fixed jumpcircles black screen bug.
+* Fixed DashTrail setDirection issue.
+* Fixed client user-agent issue.
+* Fixed FakeLag RenderModel, AutoWalk conflict, and Notification element concurrent modifications.
+* Fixed projectile rendering for non-selected entities.
+* Fixed download button visibility in popup/update.
+* Fixed JumpEvent spam in singleplayer mode.
+* Fixed sideGUI focus issues when clickGUI is open.
+* Fixed KillAura ClickOnly option causing unintended clicks.
+* Fixed lunar brand issue.
+* Fixed Grim BadPacketsV alert patch.
+* Fixed scoreboard visual issues with Minecraft font.
+* Fixed KillAura AutoBlock not updating block status after slot change.
+* Fixed FontRenderer null text input handling.
+* Fixed FreeLook visual issues and increased Backtrack delay limit.
+~ Refactored collection optimization in Backtrack module.
+~ Refactored Java version warning to popup.
+~ Refactored build.gradle; removed loombok dependency.
+~ Refactored file extensions from .java to .kt.
+~ Refactored TabGUI initialization optimization.
+~ Refactored SnakeGame for improved performance.
+~ Removed frost shader for performance.
 ~ B13 (#2e1a894)
 + Added AntiCheatDector Module.
 + Added FontManager UI.
