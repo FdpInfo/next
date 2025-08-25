@@ -1,3 +1,67 @@
+~ B15 (#xxxxxx)
++ Added ESP2D Module.
++ Added plugins: save-log option; configurable rescan/timeout; unified suspicious detection; visible-width wrapping; debug-gated payload hints.
++ Added plugins: payload-channel discovery, windowed aggregation, case-insensitive dedupe; infer plugins from channels.
++ Added Silent View option to ChestStealer.
++ Added TPS command.
++ Added Bloom Color option
++ Added middle-click binding for ClickGUI in YzyGUI.
++ Added NoSlow Grim 2.3.72 (1.9+) mode.
++ Added NoFall Grim 2.3.72 (1.9+) mode.
++ Added Furnace option to Stealer.
++ Added GUI update to show last commit & last release info.
++ Added plugins options: notify suspicion on every auto scan.
++ Added third-person FOV control for Camera.
++ Added dimension & biome to watermark.
++ Added online indicator to watermark.
++ Added FileManager support for local plugins.
++ Added health display in Tab list.
++ Added enemies display in Tab list.
++ Added team compatibility in Tab list.
++ Added friends display in Tab list.
++ Added Image ESP in TargetESP.
++ Added “Points” mode for TargetESP.
++ Added improved 2D ESP processing pipeline (ESP2D).
++ Update ESP tags / more RGB colors.
++ Added ESP2D hpBar styles.
++ Added ESP2D team colors compatible.
++ Added HUD feature to save image element to file.
++ Added HTTP cache.
++ Added LunarClient brand update.
++ Added Discord button in GuiUpdate.
++ Added missing implementations.
+* Fixed unused drawImageMark.
+* Chams use existing Color instance instead of creating new one
+* Fixed ArrayIndexOutOfBoundsException and GL stack overflow in ESP2.
+* Fixed black screen when using armor with custom model.
+* Fixed Lunar Client F3 select.
+* Fixed Camera handlers honoring “View off”.
+* Fixed TabList: enforce “move self to top” ordering and add ♛ prefix for local player.
+* Fixed TabList: restore header/footer toggles and reserve dynamic width for numeric ping.
+* Fixed Tab-overlay: reserve dynamic width for numeric ping to prevent name overlap.
+* Fixed incorrect method calls; replaced with correct API methods.
+* Fixed ClickGUI category close bug when modules are expanded.
+* Fixed scroll direction; implemented singleton pattern and improved error handling.
+* Fixed YzyGUI resource icon.
+* Fixed ClickGUI initialization by reusing GUI instances.
+* Fixed InfiniteAura ConcurrentModification (#1404) with extended loop sequence.
+* Fixed Mixins: set remap=false on library methods (Guava, LWJGL).
+* Fixed UserUtils wrong cache usage.
+* Fixed method name typos.
+* Fixed stream not closed.
+~ Refactored IRC: improved packet serialization with PooledByteBufAllocator.
+~ Refactored IRC: moved packet types to external lib.
+~ Refactored IRC: updated lib and bootstrap system.
+~ Refactored GUI: added coroutine scope for AbstractScreen.
+~ Refactored future creation to simplify usage.
+~ Refactored preload failure handling for clarity.
+~ Chore: removed unrecommended usages.
+~ Chore: removed duplicated classes.
+~ Chore: replaced deprecated Char.toInt() with Char.code.
+~ Chore(deps): bumped okhttp 5.0.0-alpha.14 → 5.0.0-alpha.16.
+~ Chore(deps): updated IRC.
+~ Chore(deps): bumped flatlaf and git-properties (dependabot).
+~ Chore(plugins): removed unused variable.
 ~ B14 (#8dde77c)
 + ClickGUI Dropdown pretty Gradients
 + Added Better Rotations and correct movement for Polar/Grim AntiCheat.
