@@ -1,7 +1,7 @@
 ~ B15 (#46648fa)
 + Added ESP2D Module.
-+ Added plugins: save-log option; configurable rescan/timeout; unified suspicious detection; visible-width wrapping; debug-gated payload hints.
-+ Added plugins: payload-channel discovery, windowed aggregation, case-insensitive dedupe; infer plugins from channels.
++ Added plugins: save-log option;
++ Added plugins: payload-channel discovery.
 + Added Silent View option to ChestStealer.
 + Added TPS command.
 + Added Bloom Color option
@@ -15,6 +15,13 @@
 + Added dimension & biome to watermark.
 + Added online indicator to watermark.
 + Added FileManager support for local plugins.
++ Added Plugins configurable rescan/timeout;
++ Added Plugins cunified suspicious detection;
++ Added Plugins visible-width wrapping;
++ Added Plugins debug-gated payload hints;
++ Added Plugins windowed aggregation;
++ Added Plugins case-insensitive dedupe;
++ Added Plugins infer plugins from channels;
 + Added health display in Tab list.
 + Added enemies display in Tab list.
 + Added team compatibility in Tab list.
