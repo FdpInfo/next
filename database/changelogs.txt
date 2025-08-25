@@ -1,4 +1,4 @@
-~ B15 (#xxxxxx)
+~ B15 (#46648fa)
 + Added ESP2D Module.
 + Added plugins: save-log option; configurable rescan/timeout; unified suspicious detection; visible-width wrapping; debug-gated payload hints.
 + Added plugins: payload-channel discovery, windowed aggregation, case-insensitive dedupe; infer plugins from channels.
