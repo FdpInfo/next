@@ -1,3 +1,22 @@
+~ B16 (#45c92b3)
++ Added New ClickGUI system (Neverlose style)
++ Added New Spotify UI
++ Added New Spotify Module
++ Added Spotify GUI element
++ Added TargetStrafe Module
++ Added tooltips to truncated module headers (prevents slider obstruction)
++ Added Spotify Integration backend
++ Added header icons support in ClickGUI
++ New ESP Preview Viwerer in ClickGUI
++ Improved ESP Preview UI
++ Improved visual clarity in ESP controls
++ Improved UI module layout
++ Formatted number settings for concise float values
++ Added subcategories for Client, Movement, Player, Visual
++ Improved ESP Preview rendering & components
++ Improved ESP Controls panel visuals
+~ Removed unused / useless folders (cleanup)
+~ Removed redundant folder structures (secondary cleanup)
 ~ B15 (#46648fa)
 + Added ESP2D Module.
 + Added plugins: save-log option;
