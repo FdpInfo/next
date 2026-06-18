@@ -14,7 +14,7 @@ const TOAST_CSS = `
 .toast-stop{flex-shrink:0;margin-left:0.4rem;font-size:0.68rem;font-weight:600;color:#e9d5ff;background:rgba(168,85,247,0.18);border:1px solid rgba(168,85,247,0.4);border-radius:0.4rem;padding:0.28rem 0.6rem;cursor:pointer;transition:background .15s,color .15s;}
 .toast-stop:hover{background:rgba(168,85,247,0.34);color:#fff;}
 .toast-go{flex-shrink:0;margin-left:0.4rem;font-size:0.68rem;font-weight:700;color:#0f0a1e;background:#fff;border-radius:0.4rem;padding:0.28rem 0.6rem;cursor:pointer;text-decoration:none;}
-.toast-progress{position:absolute;bottom:0;left:0;height:2px;width:100%;border-radius:0 0 0.6rem 0.6rem;background:linear-gradient(90deg, #7c3aed, #a855f7);transform-origin:left;animation:shrink 5s linear forwards;}
+.toast-progress{position:absolute;bottom:0;left:0;height:2px;width:100%;border-radius:0 0 0.6rem 0.6rem;background:linear-gradient(90deg, #7c3aed, #a855f7);transform-origin:left;animation:shrink 3s linear forwards;}
 @keyframes shrink{from{transform:scaleX(1);}to{transform:scaleX(0);}}
 `;
 
@@ -23,7 +23,7 @@ export function RedirectToast({
 }: {
   target?: string;
 }) {
-  const [seconds, setSeconds] = useState(5);
+  const [seconds, setSeconds] = useState(3);
   const [stopped, setStopped] = useState(false);
   const intervalRef = useRef(0);
 
