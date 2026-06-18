@@ -1,0 +1,31 @@
+{
+  "name": "fdpclient-next",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Lucas Lima (Zywl)",
+    "url": "https://lucas-lima.xyz"
+  },
+  "description": "FDP Client landing page rebuilt with Next.js + React + TypeScript (pixel-perfect port).",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "next": "^15.5.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "swiper": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.7",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}
