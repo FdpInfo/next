@@ -37,7 +37,7 @@ export function FeatureTabs() {
         >
           <div className="absoluto esquerda-50 topo-0 z-index--10 transladar-x-menos-50porcento">
             <img
-              src="/src/resources/svg/glow-top.svg"
+              src={asset("/src/resources/svg/glow-top.svg")}
               className="largura-maxima-nenhuma"
               width="1404"
               height="658"
