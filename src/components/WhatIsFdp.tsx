@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ParticleField } from "@/components/effects/ParticleField";
 import { HighlightGroup } from "@/components/effects/HighlightGroup";
+import { DownloadLink } from "@/components/DownloadLink";
 import { asset } from "@/lib/asset";
 
 const CARD =
@@ -139,9 +140,8 @@ export function WhatIsFdp() {
                           </div>
                         </div>
                         <div>
-                          <Link
+                          <DownloadLink
                             className="button-secondary zywl-relativo text-color-gray-200 transition-all transition-duration-150ms transition-ease-in-out bg-linear-gradient-gray-padding before-content-pointer-none before-content-absolute before-content-inset-0 before-content-border-radius-9999px before-content-bg-opacity-0-3 hover-text-white paredes"
-                            href="/download"
                           >
                             <span className="zywl-relativo exibir-inline-flex alinhar-itens-centro">
                               {" "}
@@ -150,7 +150,7 @@ export function WhatIsFdp() {
                                 -&gt;
                               </span>
                             </span>
-                          </Link>
+                          </DownloadLink>
                         </div>
                       </div>
                       <div className="zywl-relativo altura-16rem largura-100porcento overflow-hidden media-altura-automatica">

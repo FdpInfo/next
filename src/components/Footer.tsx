@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { asset } from "@/lib/asset";
 import { ChangelogLink } from "@/components/ChangelogLink";
+import { DownloadLink } from "@/components/DownloadLink";
 import { GITHUB_RELEASES } from "@/lib/community-data";
 
 export function Footer() {
@@ -42,12 +43,9 @@ export function Footer() {
             </h6>
             <ul className="margem-y-0-5rem font-size-0-875rem">
               <li>
-                <Link
-                  className="text-color-gray-300 transition-all transition-duration-150ms transition-ease-in-out hover-text-gray"
-                  href="/download"
-                >
+                <DownloadLink className="text-color-gray-300 transition-all transition-duration-150ms transition-ease-in-out hover-text-gray">
                   Download
-                </Link>
+                </DownloadLink>
               </li>
               <li>
                 <Link

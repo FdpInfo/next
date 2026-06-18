@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { ParticleField } from "@/components/effects/ParticleField";
+import { DownloadLink } from "@/components/DownloadLink";
 import { asset } from "@/lib/asset";
 
 export function Hero() {
@@ -27,9 +27,8 @@ export function Hero() {
           <div className="mx-auto largura-maxima-48rem text-align-center">
             <div className="margem-inferior-1-5rem" data-aos="fade-down">
               <div className="zywl-relativo exibir-inline-flex before-content-absolute before-content-inset-0 before-content-bg-purple before-content-filter-blur-12px">
-                <Link
+                <DownloadLink
                   className="button-secondary zywl-relativo largura-100porcento text-color-gray-200 transition-all transition-duration-150ms transition-ease-in-out bg-linear-gradient-purple-padding before-content-pointer-none before-content-absolute before-content-inset-0 before-content-border-radius-9999px before-content-bg-opacity-0-5 hover-text-white paredes"
-                  href="/download"
                 >
                   <span className="zywl-relativo exibir-inline-flex alinhar-itens-centro">
                     {" "}
@@ -38,7 +37,7 @@ export function Hero() {
                       -&gt;
                     </span>
                   </span>
-                </Link>
+                </DownloadLink>
               </div>
             </div>
             <h1
@@ -60,16 +59,15 @@ export function Hero() {
               data-aos-delay="400"
             >
               <div>
-                <Link
+                <DownloadLink
                   className="button-primary largura-100porcento bg-linear-gradient gradient-from-white gradient-to-white gradient-to-white-0-8 text-color-gray-900 transition-all transition-duration-150ms transition-ease-in-out hover-bg-white paredes"
-                  href="/download"
                 >
                   {" "}
                   Download now!{" "}
                   <span className="margem-esquerda-0-25rem letter-spacing-0 text-color-purple-600 transition-transform transition-duration-150ms transition-ease-in-out c8087">
                     -&gt;
                   </span>
-                </Link>
+                </DownloadLink>
               </div>
               <div>
                 <a
