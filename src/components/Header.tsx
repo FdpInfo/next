@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { asset } from "@/lib/asset";
 import { SearchTrigger } from "@/components/SearchTrigger";
 
@@ -23,15 +22,15 @@ export function Header() {
                 <SearchTrigger />
               </li>
               <li className="margem-esquerda-1-5rem">
-                <Link
+                <a
                   className="font-size-0-875rem font-weight-500 text-color-gray-200 transition-all transition-duration-150ms transition-ease-in-out hover-text-white"
                   href="/community"
                 >
                   Discord
-                </Link>
+                </a>
               </li>
               <li className="margem-esquerda-1-5rem">
-                <Link
+                <a
                   className="button-secondary zywl-relativo largura-100porcento text-color-gray-200 transition-all transition-duration-150ms transition-ease-in-out bg-linear-gradient-gray-padding before-content-pointer-none before-content-absolute before-content-inset-0 before-content-border-radius-9999px before-content-bg-opacity-0-3 hover-text-white paredes"
                   href="/donate"
                 >
@@ -42,7 +41,7 @@ export function Header() {
                       -&gt;
                     </span>
                   </span>
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>

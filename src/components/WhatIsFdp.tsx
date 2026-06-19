@@ -276,7 +276,7 @@ export function WhatIsFdp() {
               <p className="font-size-0-875rem text-color-gray-300">
                 Your information is secure with us. Read privacy policy{" "}
                 <b>
-                  <Link href="/privacy">here</Link>
+                  <a href="/privacy">here</a>
                 </b>
                 . We are GDPR compliant.{" "}
               </p>

@@ -1,8 +1,11 @@
 import Link from "next/link";
 import { asset } from "@/lib/asset";
-import { ChangelogLink } from "@/components/ChangelogLink";
-import { DownloadLink } from "@/components/DownloadLink";
-import { GITHUB_RELEASES } from "@/lib/community-data";
+
+// On the /next deployment, raw <a href="/x"> points at the ROOT site
+// (fdpinfo.github.io/x) instead of /next/x — next/Link would prepend the
+// basePath. The secondary pages already live on the root, so we link there.
+const LINK_CLASS =
+  "text-color-gray-300 transition-all transition-duration-150ms transition-ease-in-out hover-text-gray";
 
 export function Footer() {
   return (
@@ -43,25 +46,19 @@ export function Footer() {
             </h6>
             <ul className="margem-y-0-5rem font-size-0-875rem">
               <li>
-                <DownloadLink className="text-color-gray-300 transition-all transition-duration-150ms transition-ease-in-out hover-text-gray">
+                <a className={LINK_CLASS} href="/download">
                   Download
-                </DownloadLink>
+                </a>
               </li>
               <li>
-                <Link
-                  className="text-color-gray-300 transition-all transition-duration-150ms transition-ease-in-out hover-text-gray"
-                  href="/donate"
-                >
+                <a className={LINK_CLASS} href="/donate">
                   Donate &amp; Plans
-                </Link>
+                </a>
               </li>
               <li>
-                <ChangelogLink
-                  className="text-color-gray-300 transition-all transition-duration-150ms transition-ease-in-out hover-text-gray"
-                  releases={GITHUB_RELEASES}
-                >
+                <a className={LINK_CLASS} href="/changelogs">
                   Changelog
-                </ChangelogLink>
+                </a>
               </li>
             </ul>
           </div>
@@ -71,28 +68,19 @@ export function Footer() {
             </h6>
             <ul className="margem-y-0-5rem font-size-0-875rem">
               <li>
-                <Link
-                  className="text-color-gray-300 transition-all transition-duration-150ms transition-ease-in-out hover-text-gray"
-                  href="/community"
-                >
+                <a className={LINK_CLASS} href="/community">
                   Community
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  className="text-color-gray-300 transition-all transition-duration-150ms transition-ease-in-out hover-text-gray"
-                  href="/tos"
-                >
+                <a className={LINK_CLASS} href="/tos">
                   Terms of service
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  className="text-color-gray-300 transition-all transition-duration-150ms transition-ease-in-out hover-text-gray"
-                  href="/community"
-                >
+                <a className={LINK_CLASS} href="/community">
                   Report a bug
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -102,28 +90,19 @@ export function Footer() {
             </h6>
             <ul className="margem-y-0-5rem font-size-0-875rem">
               <li>
-                <Link
-                  className="text-color-gray-300 transition-all transition-duration-150ms transition-ease-in-out hover-text-gray"
-                  href="/refund"
-                >
+                <a className={LINK_CLASS} href="/refund">
                   Refund policy
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  className="text-color-gray-300 transition-all transition-duration-150ms transition-ease-in-out hover-text-gray"
-                  href="/terms"
-                >
+                <a className={LINK_CLASS} href="/terms">
                   Terms &amp; Conditions
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  className="text-color-gray-300 transition-all transition-duration-150ms transition-ease-in-out hover-text-gray"
-                  href="/privacy"
-                >
+                <a className={LINK_CLASS} href="/privacy">
                   Privacy policy
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

@@ -181,7 +181,7 @@ export function Pricing() {
                     </div>
                   </div>
                   <div className="border-bottom-width-1px border-color-rgb-30-41-59 padding-bottom-1rem">
-                    <Link
+                    <a
                       className="button-secondary largura-100porcento bg-color-rgb-168-85-247 text-color-white transition-all transition-duration-150ms transition-ease-in-out hover-bg-purple paredes"
                       href="/donate"
                     >
@@ -190,7 +190,7 @@ export function Pricing() {
                       <span className="margem-esquerda-0-25rem letter-spacing-0 text-color-purple-300 transition-transform transition-duration-150ms transition-ease-in-out c8087">
                         -&gt;
                       </span>
-                    </Link>
+                    </a>
                   </div>
                 </div>
 

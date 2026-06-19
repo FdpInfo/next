@@ -70,12 +70,12 @@ export default function NotFound() {
                   </Link>
                 </div>
                 <div>
-                  <Link
+                  <a
                     className="button-primary largura-100porcento bg-color-rgb bg-opacity-0-25 text-color-gray-100 transition-all transition-duration-150ms transition-ease-in-out hover-bg-opacity-0-3 hover-text-white"
                     href="/community"
                   >
                     <span>Community</span>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

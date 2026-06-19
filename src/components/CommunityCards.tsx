@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import type { ReactNode } from "react";
 
 const DISCORD_PATH =
@@ -68,7 +67,7 @@ export function CommunityCards({
       </a>
 
       {/* Changelog — opens the in-site changelog AND the GitHub releases */}
-      <Link
+      <a
         className="hub-card"
         href="/changelogs"
         onClick={() => openInNewTab(githubReleases)}
@@ -83,7 +82,7 @@ export function CommunityCards({
           desc="Opens the full in-site changelog and the GitHub releases in a new tab."
           cta="View changelog & GitHub"
         />
-      </Link>
+      </a>
 
       {/* Report a bug — opens a new GitHub issue */}
       <a
@@ -105,7 +104,7 @@ export function CommunityCards({
       </a>
 
       {/* Support */}
-      <Link className="hub-card" href="/donate">
+      <a className="hub-card" href="/donate">
         <CardBody
           icon={
             <Icon>
@@ -116,7 +115,7 @@ export function CommunityCards({
           desc="FDP is free — donations keep it alive and unlock exclusive capes."
           cta="Donate"
         />
-      </Link>
+      </a>
     </div>
   );
 }
