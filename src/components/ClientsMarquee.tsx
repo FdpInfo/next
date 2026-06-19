@@ -47,6 +47,8 @@ export function ClientsMarquee() {
                         alt={logo.alt}
                         width={logo.width}
                         height={logo.height}
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                   ))}

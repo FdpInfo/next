@@ -41,7 +41,9 @@ export function FeatureTabs() {
               className="largura-maxima-nenhuma"
               width="1404"
               height="658"
-              alt="Features Illustration"
+              alt=""
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>

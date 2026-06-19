@@ -43,12 +43,21 @@ export function ParticleField({
     const context = canvas.getContext("2d");
     if (!canvasContainer || !context) return;
 
+    // Perf/a11y: halve the particle count on small screens, and fully respect
+    // prefers-reduced-motion (draw a single static frame, no animation loop).
+    const reduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    const isMobile = window.innerWidth < 768;
+    const effQuantity = isMobile ? Math.max(3, Math.round(quantity * 0.5)) : quantity;
+
     const dpr = window.devicePixelRatio || 1;
-    const settings = { quantity, staticity, ease };
+    const settings = { quantity: effQuantity, staticity, ease };
     let circles: Circle[] = [];
     const mouse = { x: 0, y: 0 };
     const canvasSize = { w: 0, h: 0 };
     let rafId = 0;
+    let running = false;
 
     const circleParams = (): Circle => {
       const x = Math.floor(Math.random() * canvasSize.w);
@@ -118,9 +127,18 @@ export function ParticleField({
       context.scale(dpr, dpr);
     };
 
+    const drawStatic = () => {
+      clearContext();
+      circles.forEach((c) => {
+        c.alpha = c.targetAlpha;
+        drawCircle({ ...c }, true);
+      });
+    };
+
     const initCanvas = () => {
       resizeCanvas();
       drawParticles();
+      if (reduced) drawStatic();
     };
 
     const onMouseMove = (event: MouseEvent) => {
@@ -177,16 +195,41 @@ export function ParticleField({
           drawCircle({ ...circle }, true);
         }
       });
-      rafId = window.requestAnimationFrame(animate);
+      if (running) rafId = window.requestAnimationFrame(animate);
+    };
+
+    const start = () => {
+      if (running || reduced) return;
+      running = true;
+      animate();
+    };
+    const stop = () => {
+      running = false;
+      window.cancelAnimationFrame(rafId);
     };
 
     initCanvas();
-    animate();
     window.addEventListener("resize", initCanvas);
-    window.addEventListener("mousemove", onMouseMove);
+
+    let io: IntersectionObserver | null = null;
+    if (!reduced) {
+      // Only run the animation loop while the canvas is actually on-screen.
+      io = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (e.isIntersecting) start();
+            else stop();
+          }
+        },
+        { threshold: 0 }
+      );
+      io.observe(canvasContainer);
+      window.addEventListener("mousemove", onMouseMove);
+    }
 
     return () => {
-      window.cancelAnimationFrame(rafId);
+      stop();
+      io?.disconnect();
       window.removeEventListener("resize", initCanvas);
       window.removeEventListener("mousemove", onMouseMove);
       circles = [];

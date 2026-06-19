@@ -83,7 +83,7 @@ export default function ChangelogsPage() {
                 className="largura-maxima-nenhuma"
                 width="2146"
                 height="774"
-                alt="Illustration"
+                alt=""
               />
             </div>
           </div>

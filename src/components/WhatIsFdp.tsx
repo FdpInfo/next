@@ -159,7 +159,9 @@ export function WhatIsFdp() {
                           src={asset("/src/resources/png/fdp_gui.png")}
                           width="504"
                           height="400"
-                          alt="Feature 01"
+                          alt="FDP Client interface"
+                          loading="lazy"
+                          decoding="async"
                         />
                       </div>
                     </div>
@@ -193,7 +195,9 @@ export function WhatIsFdp() {
                           src={asset("/src/resources/png/fdp_features.png")}
                           width="536"
                           height="230"
-                          alt="Feature 02"
+                          alt="FDP Client features"
+                          loading="lazy"
+                          decoding="async"
                         />
                       </div>
                     </div>
@@ -225,7 +229,9 @@ export function WhatIsFdp() {
                           src={asset("/src/resources/png/fdp.png")}
                           width="330"
                           height="330"
-                          alt="Feature 03"
+                          alt="FDP Client logo"
+                          loading="lazy"
+                          decoding="async"
                         />
                       </div>
                     </div>

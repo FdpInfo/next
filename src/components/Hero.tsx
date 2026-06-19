@@ -19,7 +19,7 @@ export function Hero() {
               className="largura-maxima-nenhuma"
               width="2146"
               height="774"
-              alt="Hero Illustration"
+              alt=""
             />
           </div>
         </div>

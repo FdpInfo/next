@@ -173,6 +173,22 @@ export function CommandPalette() {
 
   const onKeyDown = useCallback(
     (e: ReactKeyboardEvent) => {
+      if (e.key === "Tab") {
+        // Focus trap: keep Tab/Shift+Tab cycling inside the dialog.
+        const panel = e.currentTarget as HTMLElement;
+        const f = panel.querySelectorAll<HTMLElement>("input, button");
+        if (!f.length) return;
+        const first = f[0];
+        const last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+        return;
+      }
       if (e.key === "ArrowDown") {
         e.preventDefault();
         setActive((a) => (results.length ? (a + 1) % results.length : 0));

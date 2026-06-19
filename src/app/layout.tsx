@@ -2,7 +2,37 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { AosInit } from "@/components/effects/AosInit";
 import { CommandPalette } from "@/components/CommandPalette";
-import { asset } from "@/lib/asset";
+import { asset, BASE_PATH } from "@/lib/asset";
+
+// Structured data: identifies the site (WebSite) and the product
+// (SoftwareApplication) for rich results. url/downloadUrl point at the root
+// origin to match the canonical attribution strategy. No aggregateRating is
+// declared to avoid fabricated review snippets (and Google penalties).
+const JSON_LD = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://fdpinfo.github.io/#website",
+      url: "https://fdpinfo.github.io/",
+      name: "FDP Client",
+      description:
+        "FDP Client — a free and open-source Minecraft Forge injection client.",
+    },
+    {
+      "@type": "SoftwareApplication",
+      name: "FDP Client",
+      url: "https://fdpinfo.github.io/",
+      downloadUrl: "https://fdpinfo.github.io/download",
+      applicationCategory: "GameApplication",
+      operatingSystem: "Windows, macOS, Linux",
+      image: `https://fdpinfo.github.io${BASE_PATH}/src/resources/png/fdp_gui.png`,
+      description:
+        "Unbeatable Minecraft cheat. Dominate 1.8.9, 1.12.2 or 1.19.4 with unmatched features.",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    },
+  ],
+};
 
 export const metadata: Metadata = {
   // Canonical/OG intentionally point at the root origin (not the /next deploy)
@@ -80,6 +110,10 @@ export default function RootLayout({
           />
         ))}
         <style>{`.discount-tag{position:absolute;top:-0.2rem;right:-0.1rem;font-size:0.75rem;padding:0.25rem 0.5rem;border-radius:2px;color:rgb(101, 227, 101);}`}</style>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
+        />
         {children}
         <CommandPalette />
         <AosInit />

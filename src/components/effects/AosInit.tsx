@@ -13,7 +13,10 @@ export function AosInit() {
   useEffect(() => {
     AOS.init({
       once: true,
-      disable: "phone",
+      // Disable on phones (as before) and for visitors who prefer reduced motion.
+      disable: () =>
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+        window.matchMedia("(max-width: 767px)").matches,
       duration: 1000,
       easing: "ease-out-cubic",
     });

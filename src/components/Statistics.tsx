@@ -133,7 +133,9 @@ export function Statistics() {
                           src={asset(slide.icon)}
                           width="56"
                           height="56"
-                          alt="Icon 01"
+                          alt=""
+                          loading="lazy"
+                          decoding="async"
                         />
                         <div className="flex-crescer-1">
                           <div className="mb-0-25rem font-size-1-125rem font-weight-700">
