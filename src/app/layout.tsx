@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { AosInit } from "@/components/effects/AosInit";
 import { CommandPalette } from "@/components/CommandPalette";
 import { CookieConsent } from "@/components/CookieConsent";
@@ -84,6 +85,18 @@ export default function RootLayout({
         <CommandPalette />
         <CookieConsent />
         <AosInit />
+        {/* Google Analytics loads for every visitor (not gated) so traffic is
+            always detected; the banner below is an informational cookie notice. */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-3QHFR8NBFS"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-3QHFR8NBFS');`}
+        </Script>
       </body>
     </html>
   );
