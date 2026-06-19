@@ -1,25 +1,31 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import { AosInit } from "@/components/effects/AosInit";
 import { CommandPalette } from "@/components/CommandPalette";
-import { asset } from "@/lib/asset";
+import { CookieConsent } from "@/components/CookieConsent";
+import { asset, BASE_PATH } from "@/lib/asset";
+
+// Origin is fixed; the canonical/OG URL must include the deploy base path so it
+// points at the real deployment (e.g. https://fdpinfo.github.io/next), not the
+// root site, which would split SEO between the old and new sites.
+const SITE_ORIGIN = "https://fdpinfo.github.io";
+const SITE_URL = `${SITE_ORIGIN}${BASE_PATH}`;
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fdpinfo.github.io"),
+  metadataBase: new URL(SITE_ORIGIN),
   title: "FDP Client Minecraft Cheating Solution | 1.8 - 1.8.9-1.20.1",
   description:
     "A replacement of LiquidBounce because CCBlueX gave up supporting 1.8.9! - Unbeatable Minecraft cheat! Dominate 1.8.9, 1.12.2 or 1.19.4 with unmatched features surpassing all competitors.",
   authors: [{ name: "fdpclient" }],
   keywords:
     "FDPCLIENT, fdp, opensource, free, hacked client, rise client, getfdp.today, fdpclient.club, minecraft, client, FDPclient github, fdp client github, minecraft client, FDPclient download, minecraft hacked client, minecraft hacked client free, minecraft hacked client download, best minecraft hacked client, minecraft hacked clients, opensource",
-  alternates: { canonical: "https://fdpinfo.github.io" },
+  alternates: { canonical: SITE_URL },
   icons: { icon: asset("/src/resources/png/fdp.png") },
   verification: { google: "zIob_IgP8UHBnHw9DxB9_RLmed3v9V3VEq5bmpicejA" },
   openGraph: {
     title: "FDPCLIENT",
     description:
       "Unbeatable Minecraft cheat! Dominate 1.8.9, 1.12.2 or 1.19.4 with unmatched features surpassing all competitors.",
-    url: "https://fdpinfo.github.io",
+    url: SITE_URL,
     siteName: "FDP Client",
     type: "website",
     images: [
@@ -79,17 +85,8 @@ export default function RootLayout({
         <style>{`.discount-tag{position:absolute;top:-0.2rem;right:-0.1rem;font-size:0.75rem;padding:0.25rem 0.5rem;border-radius:2px;color:rgb(101, 227, 101);}`}</style>
         {children}
         <CommandPalette />
+        <CookieConsent />
         <AosInit />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-3QHFR8NBFS"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-3QHFR8NBFS');`}
-        </Script>
       </body>
     </html>
   );
