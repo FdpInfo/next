@@ -56,7 +56,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a className={LINK_CLASS} href="/changelogs">
+                <a className={LINK_CLASS} href="/next/changelogs/">
                   Changelog
                 </a>
               </li>
