@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { AosInit } from "@/components/effects/AosInit";
 import { CommandPalette } from "@/components/CommandPalette";
-import { CookieConsent } from "@/components/CookieConsent";
 import { asset } from "@/lib/asset";
 
 export const metadata: Metadata = {
@@ -83,10 +82,8 @@ export default function RootLayout({
         <style>{`.discount-tag{position:absolute;top:-0.2rem;right:-0.1rem;font-size:0.75rem;padding:0.25rem 0.5rem;border-radius:2px;color:rgb(101, 227, 101);}`}</style>
         {children}
         <CommandPalette />
-        <CookieConsent />
         <AosInit />
-        {/* Google Analytics loads for every visitor (not gated) so traffic is
-            always detected; the banner below is an informational cookie notice. */}
+        {/* Google Analytics loads for every visitor so traffic is always detected. */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-3QHFR8NBFS"
           strategy="afterInteractive"
