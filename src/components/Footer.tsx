@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { asset } from "@/lib/asset";
+import { useI18n } from "@/lib/i18n";
 
 // On the /next deployment, raw <a href="/x"> points at the ROOT site
 // (fdpinfo.github.io/x) instead of /next/x — next/Link would prepend the
@@ -8,6 +11,7 @@ const LINK_CLASS =
   "text-color-gray-300 transition-all transition-duration-150ms transition-ease-in-out hover-text-gray";
 
 export function Footer() {
+  const { t } = useI18n();
   return (
     <footer>
       <div className="mx-auto largura-maxima-72rem padding-left-right-1rem media-padding-horizontal-1-5rem">
@@ -16,24 +20,28 @@ export function Footer() {
             <div className="display-flex  altura-100-porcento flex-direction-column justificar-conteudo-espaco-entre media-flex-linha-horizontal media-flex-coluna-vertical">
               <div className="margem-inferior-1rem media-margem-inferior-0px">
                 <div className="margem-inferior-1rem">
-                  <Link className="exibir-bloco" href="/" aria-label="FDP">
+                  <Link
+                    className="exibir-bloco"
+                    href="/"
+                    aria-label={t.footer.logoAriaLabel}
+                  >
                     <img
                       src={asset("/src/resources/png/fdp.png")}
                       width="60"
                       height="60"
-                      alt="fdp"
+                      alt={t.footer.logoAlt}
                     />
                   </Link>
                 </div>
                 <div className="font-size-0-875rem text-color-gray-200">
                   © {new Date().getFullYear()} fdpclient{" "}
-                  <span className="text-color-gray-600">·</span> lucas-lima.xyz.
-                  All rights reserved. Designed &amp; developed by{" "}
+                  <span className="text-color-gray-600">·</span>{" "}
+                  {t.footer.copyright}{" "}
                   <a
                     className="text-color-gray-50 transition-all transition-duration-150ms transition-ease-in-out hover-text-white"
                     href="https://lucas-lima.xyz"
                   >
-                    lucsp.lima (aka Zywl)
+                    {t.footer.author}
                   </a>
                   .
                 </div>
@@ -42,66 +50,66 @@ export function Footer() {
           </div>
           <div className="media-coluna-grade-abranger-6 media-abranger-coluna-grade-3 media-abranger-coluna-grade-2">
             <h6 className="mb-0-5rem font-size-0-875rem font-weight-500 text-color-gray-50">
-              Products
+              {t.footer.products}
             </h6>
             <ul className="margem-y-0-5rem font-size-0-875rem">
               <li>
                 <a className={LINK_CLASS} href="/download">
-                  Download
+                  {t.footer.download}
                 </a>
               </li>
               <li>
                 <a className={LINK_CLASS} href="/donate">
-                  Donate &amp; Plans
+                  {t.footer.donatePlans}
                 </a>
               </li>
               <li>
                 <a className={LINK_CLASS} href="/next/changelogs/">
-                  Changelog
+                  {t.footer.changelog}
                 </a>
               </li>
             </ul>
           </div>
           <div className="media-coluna-grade-abranger-6 media-abranger-coluna-grade-3 media-abranger-coluna-grade-2">
             <h6 className="mb-0-5rem font-size-0-875rem font-weight-500 text-color-gray-50">
-              Resources
+              {t.footer.resources}
             </h6>
             <ul className="margem-y-0-5rem font-size-0-875rem">
               <li>
                 <a className={LINK_CLASS} href="/community">
-                  Community
+                  {t.footer.community}
                 </a>
               </li>
               <li>
                 <a className={LINK_CLASS} href="/tos">
-                  Terms of service
+                  {t.footer.tos}
                 </a>
               </li>
               <li>
                 <a className={LINK_CLASS} href="/community">
-                  Report a bug
+                  {t.footer.reportBug}
                 </a>
               </li>
             </ul>
           </div>
           <div className="media-coluna-grade-abranger-6 media-abranger-coluna-grade-3 media-abranger-coluna-grade-2">
             <h6 className="mb-0-5rem font-size-0-875rem font-weight-500 text-color-gray-50">
-              Legals
+              {t.footer.legals}
             </h6>
             <ul className="margem-y-0-5rem font-size-0-875rem">
               <li>
                 <a className={LINK_CLASS} href="/refund">
-                  Refund policy
+                  {t.footer.refund}
                 </a>
               </li>
               <li>
                 <a className={LINK_CLASS} href="/terms">
-                  Terms &amp; Conditions
+                  {t.footer.terms}
                 </a>
               </li>
               <li>
                 <a className={LINK_CLASS} href="/privacy">
-                  Privacy policy
+                  {t.footer.privacy}
                 </a>
               </li>
             </ul>
